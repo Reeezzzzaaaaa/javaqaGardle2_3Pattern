@@ -1,5 +1,3 @@
-package DeliveryCard;
-
 import lombok.Data;
 
 @Data

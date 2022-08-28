@@ -1,5 +1,3 @@
-package DeliveryCard;
-
 import com.github.javafaker.Faker;
 import lombok.experimental.UtilityClass;
 import java.util.Locale;

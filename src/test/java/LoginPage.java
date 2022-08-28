@@ -1,5 +1,3 @@
-package DeliveryCard;
-
 import com.codeborne.selenide.Condition;
 import org.openqa.selenium.Keys;
 
