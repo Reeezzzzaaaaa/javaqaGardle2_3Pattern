@@ -20,8 +20,8 @@ public class ChangeDateFakerTest {
         login.phone();
         login.agreement();
         login.button();
-        login.shouldBe(appear, 5);
-        login.shouldHave(3, 5, visible);
+        login.shouldBe(appear, 12);
+        login.shouldHave(3, 12, visible);
         login.dateDelete();
         login.date(10);
         login.button();
