@@ -1,6 +1,5 @@
-package DeliveryCard.dataGenerator;
+package DeliveryCard;
 
-import DeliveryCard.RegistrationInfo.*;
 import com.github.javafaker.Faker;
 import lombok.experimental.UtilityClass;
 import java.util.Locale;

@@ -1,6 +1,5 @@
-package DeliveryCard.DeliveryCardDataFaker;
+package DeliveryCard;
 
-import DeliveryCard.LoginPage.*;
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.*;
 

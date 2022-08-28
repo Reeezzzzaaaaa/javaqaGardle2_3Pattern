@@ -1,8 +1,6 @@
-package DeliveryCard.LoginPage;
+package DeliveryCard;
 
-import DeliveryCard.RegistrationInfo.*;
 import com.codeborne.selenide.Condition;
-import DeliveryCard.dataGenerator.*;
 import org.openqa.selenium.Keys;
 
 import java.time.Duration;

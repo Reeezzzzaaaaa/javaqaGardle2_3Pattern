@@ -1,4 +1,4 @@
-package DeliveryCard.RegistrationInfo;
+package DeliveryCard;
 
 import lombok.Data;
 
