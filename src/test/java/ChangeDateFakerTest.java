@@ -13,7 +13,6 @@ public class ChangeDateFakerTest {
     @Test
     void shouldBeValidTest() {
 
-        Configuration.holdBrowserOpen=true;
         login.city("Брянск");  //faker.city() может генерировать города не являющиеся административными центрами, доставка карты в которые невозможна
         login.dateDelete();
         login.date(3);
