@@ -8,23 +8,6 @@ import static com.codeborne.selenide.Condition.*;
 
 public class ChangeDateFakerTest {
 
-    WebDriver driver;
-
-    @BeforeAll
-    static void setupAll() {
-        WebDriverManager.chromedriver().setup();
-    }
-
-    @BeforeEach
-    void setup() {
-        driver = new ChromeDriver();
-    }
-
-    @AfterEach
-    void tearDown() {
-        driver.quit();
-    }
-
     LoginPage login = new LoginPage();
 
     @BeforeEach
