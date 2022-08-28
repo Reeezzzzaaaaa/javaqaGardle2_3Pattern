@@ -1,9 +1,29 @@
 import com.codeborne.selenide.Configuration;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.*;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 import static com.codeborne.selenide.Condition.*;
 
 public class ChangeDateFakerTest {
+
+    WebDriver driver;
+
+    @BeforeAll
+    static void setupAll() {
+        WebDriverManager.chromedriver().setup();
+    }
+
+    @BeforeEach
+    void setup() {
+        driver = new ChromeDriver();
+    }
+
+    @AfterEach
+    void tearDown() {
+        driver.quit();
+    }
 
     LoginPage login = new LoginPage();
 
