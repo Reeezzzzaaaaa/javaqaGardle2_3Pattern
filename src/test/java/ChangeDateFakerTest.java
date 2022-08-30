@@ -5,28 +5,20 @@ import static com.codeborne.selenide.Condition.*;
 
 public class ChangeDateFakerTest {
 
-    LoginPage login = new LoginPage();
+
 
     @BeforeEach
     void setUp() {login.openPage();}
 
+    LoginPage login = new LoginPage();
+    RegistrationInfo info = DataGenerator.Registration.generateInfo("ru");
+
     @Test
     void shouldBeValidTest() {
 
-        login.city("Брянск");  //faker.city() может генерировать города не являющиеся административными центрами, доставка карты в которые невозможна
-        login.dateDelete();
-        login.date(3);
-        login.name();
-        login.phone();
-        login.agreement();
-        login.button();
-        login.shouldBe(appear, 12);
+        login.getPlanDate(info.getCity(),3, info.getName(), info.getPhone(), appear, 12);
         login.shouldHave(3, 12, visible);
-        login.dateDelete();
-        login.date(10);
-        login.button();
-        login.replan();
-        login.shouldBe(appear, 12);
+        login.getRePlanDate(10, appear, 12);
         login.shouldHave(10, 12, visible);
     }
 }
