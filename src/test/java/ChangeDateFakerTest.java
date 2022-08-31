@@ -1,11 +1,11 @@
-import com.codeborne.selenide.Configuration;
+import CardDelivery.DataGenerator.DataGenerator;
+import CardDelivery.Pages.LoginPage;
+import CardDelivery.Registration.RegistrationInfo;
 import org.junit.jupiter.api.*;
 
 import static com.codeborne.selenide.Condition.*;
 
 public class ChangeDateFakerTest {
-
-
 
     @BeforeEach
     void setUp() {login.openPage();}

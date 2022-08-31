@@ -1,9 +1,10 @@
+package CardDelivery.Pages;
+
+import CardDelivery.DataGenerator.DataGenerator;
 import com.codeborne.selenide.Condition;
 import org.openqa.selenium.Keys;
 
 import java.time.Duration;
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 
 import static com.codeborne.selenide.Selenide.$x;
 import static com.codeborne.selenide.Selenide.open;

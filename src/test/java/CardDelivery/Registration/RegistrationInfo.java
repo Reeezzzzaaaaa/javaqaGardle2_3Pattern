@@ -1,4 +1,5 @@
-import com.github.javafaker.service.RandomService;
+package CardDelivery.Registration;
+
 import lombok.Data;
 
 @Data

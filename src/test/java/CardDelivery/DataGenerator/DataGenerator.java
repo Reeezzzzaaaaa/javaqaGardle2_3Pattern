@@ -1,13 +1,20 @@
+package CardDelivery.DataGenerator;
+
+import CardDelivery.Registration.RegistrationInfo;
 import com.github.javafaker.Faker;
 import lombok.experimental.UtilityClass;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
 import java.util.Locale;
 
 @UtilityClass
 public class DataGenerator {
+
+    @UtilityClass
+    public static class administrativeCenter {
+        String[] city = {"Брянск", "Смоленск", "Курск", "Белгород", "Москва"};
+    }
 
     @UtilityClass
     public static class Registration {
@@ -16,7 +23,8 @@ public class DataGenerator {
             return new RegistrationInfo(
                     faker.name().fullName(),
                     faker.phoneNumber().phoneNumber(),
-                    faker.address().city()); // не понимаю как с faker.random() поступать
+                    faker.address().city());
+                    //faker.random(administrativeCenter.city)); // не понимаю как с faker.random() поступать
         }
     }
 
