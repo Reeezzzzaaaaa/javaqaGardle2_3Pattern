@@ -1,6 +1,6 @@
-import CardDelivery.DataGenerator.DataGenerator;
-import CardDelivery.Pages.LoginPage;
-import CardDelivery.Registration.RegistrationInfo;
+import CardDelivery.dataGenerator.DataGenerator;
+import CardDelivery.pages.LoginPage;
+import CardDelivery.registration.RegistrationInfo;
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.*;
 

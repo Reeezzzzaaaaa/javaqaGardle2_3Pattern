@@ -1,4 +1,4 @@
-package CardDelivery.Registration;
+package CardDelivery.registration;
 
 import lombok.Data;
 

@@ -1,6 +1,6 @@
-package CardDelivery.Pages;
+package CardDelivery.pages;
 
-import CardDelivery.DataGenerator.DataGenerator;
+import CardDelivery.dataGenerator.DataGenerator;
 import com.codeborne.selenide.Condition;
 import org.openqa.selenium.Keys;
 
