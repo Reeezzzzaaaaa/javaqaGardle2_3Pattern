@@ -1,6 +1,5 @@
-package CardDelivery.dataGenerator;
+package сardDelivery.data;
 
-import CardDelivery.registration.RegistrationInfo;
 import com.github.javafaker.Faker;
 import lombok.experimental.UtilityClass;
 
@@ -13,7 +12,7 @@ import java.util.Random;
 public class DataGenerator {
 
     @UtilityClass
-    public static class Registration {
+    public static class Data {
         public static RegistrationInfo generateInfo(String locale) {
             Faker faker = new Faker(new Locale(locale));
             String[] center = {"Брянск", "Смоленск", "Курск", "Белгород", "Москва"};
@@ -23,14 +22,8 @@ public class DataGenerator {
                     faker.name().fullName(),
                     faker.phoneNumber().phoneNumber(),
                     center[city]);
-
-                    //faker.address().city());
-
         }
-    }
 
-    @UtilityClass
-    public static class Date {
         public static String generateDate(int days) {
             return LocalDate.now().plusDays(days).format(DateTimeFormatter.ofPattern("dd.MM.yyyy"));
         }
