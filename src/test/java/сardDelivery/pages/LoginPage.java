@@ -12,7 +12,6 @@ import static com.codeborne.selenide.Selenide.open;
 public class LoginPage {
 
     public void planDate(String city, int date, String name, String phone, Condition appear, int seconds) {
-        open("http://localhost:9999/");
         $x("//*[@data-test-id='city']//*[@placeholder='Город']").setValue(city);
         $x("//*[@data-test-id='date']//*[@placeholder='Дата встречи']").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.DELETE);
         $x("//*[@data-test-id='date']//*[@placeholder='Дата встречи']").setValue(DataGenerator.Data.generateDate(date));
