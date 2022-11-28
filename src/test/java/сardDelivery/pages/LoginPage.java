@@ -7,7 +7,6 @@ import сardDelivery.data.DataGenerator;
 import java.time.Duration;
 
 import static com.codeborne.selenide.Selenide.$x;
-import static com.codeborne.selenide.Selenide.open;
 
 public class LoginPage {
 
